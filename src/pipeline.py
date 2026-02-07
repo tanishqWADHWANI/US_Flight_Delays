@@ -7,7 +7,6 @@ import numpy as np
 import dask.dataframe as dd
 import requests
 from pathlib import Path
-from google.cloud import bigquery
 import time
 import zipfile
 from typing import List
@@ -140,7 +139,7 @@ def extract_and_filter(zip_files: List[Path], processed_dir: str | Path):
 
     # Busiest U.S. Airports (2020–2024) 
     top_us_airports = {
-    'ATL',  # Atlanta Hartsfield–Jackson    ← #1 in the world
+    'ATL',  # Atlanta Hartsfield–Jackson    - #1 in the world
     'DFW',  # Dallas/Fort Worth
     'DEN',  # Denver
     'ORD',  # Chicago O'Hare
